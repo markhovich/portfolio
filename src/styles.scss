@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --main-bg-color: rgb(255, 255, 255);
+    --main-text-color: rgb(34, 33, 33);
+    --secondary-bg-color-1: #0d47a1;
+    --secondary-bg-color-2: #42a5f5;
+    --third-color: rgb(226, 38, 38);
+}
+
+body{
+    line-height: 1.6rem;
+    background-color: var(--main-bg-color) ;
+    color: var(--main-text-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+/******************************* GENERAL ***********************/
+
+h1, h2{
+    color: var(--third-color);
+}
+
+h3, h4, h5{
+    color: var(--secondary-title-color);
+}
+
+h2, h3{
+    text-align: center;
+}
+p{
+    max-width: 45rem;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+}
+
+/****************** LINKS ************************************/
+a:hover{
+    filter: invert(20%);
+}
+
+/******************** ICONS ********************************/
+i{
+    width: 1rem;
+}
+
+/********************* BUTTONS ***************************/
+
+.btn{
+    border-radius: 0;
+}

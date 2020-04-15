@@ -1,0 +1,68 @@
+section{
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+p{
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.slanting-back{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+#competences{
+    color: var(--main-bg-color);
+}
+
+#competences .slanting-back{
+    background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
+                            var(--secondary-bg-color-1) 530px, var(--main-bg-color) 530px);
+    height: 650px;
+    top: 690px;
+}
+
+#timeline{
+    //background: linear-gradient(30deg, var(--secondary-bg-color-1), var(--secondary-bg-color-2));
+    color: var(--main-bg-color)
+}
+
+#timeline .slanting-back{
+    background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1710px, var(--main-bg-color) 1710px);
+    height: 1740px;
+    top: 1900px;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+.list-group-item{
+    background: transparent;
+}
+
+/********************* PROJECT CARD ************************/
+.project-card{
+    margin-top: 1rem;
+}
+
+.project-body{
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.project-comment{
+    height: 5.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(194, 198, 212);
+}
+
+.techno{
+    height: 3.7rem;
+}

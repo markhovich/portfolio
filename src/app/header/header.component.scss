@@ -1,0 +1,28 @@
+/************************ HEADER ***************************************/
+header{
+    color: var(--main-bg-color);
+}
+
+.slanting-back{
+    background: linear-gradient(5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-1) 120px, var(--secondary-bg-color-2));
+    position: absolute;
+    height: 400px;
+    top:0;
+    left:-0;
+    right:-0;
+    bottom:0px;
+    z-index: -1; 
+}
+
+#id-photo{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+img{
+    width: 80%;
+}
+
+a{
+    color: var(--main-text-color);
+}
