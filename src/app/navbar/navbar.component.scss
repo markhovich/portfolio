@@ -1,6 +1,23 @@
+nav {
+    padding-top: 1.2rem;
+}
+
+.navbar{
+
+}
+
+.nav-element{
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
 
 a {
     color: var(--main-text-color);
     font-size: 1.4rem;
     transition: 0.5s;
 }
+

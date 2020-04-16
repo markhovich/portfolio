@@ -51,6 +51,10 @@ h2{
     margin-top: 1rem;
 }
 
+.project-card img{
+    width: 100%;
+    height: 11.5rem;
+}
 .project-body{
     margin-bottom: 1.5rem;
     margin-top: 0;
@@ -66,3 +70,59 @@ h2{
 .techno{
     height: 3.7rem;
 }
+
+/***************** MEDIA QUERIES *************************/
+
+@media (max-width: 900px) {
+
+    #timeline .slanting-back{
+        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1790px, 
+                                var(--main-bg-color) 1790px);
+        height: 1900px;
+        top: 1740px;
+    }
+ }
+
+ @media (max-width: 768px) {
+
+    #competences .slanting-back{
+        background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
+                                var(--secondary-bg-color-1) 980px, var(--main-bg-color) 980px);
+        height: 1100px;
+        top: 1290px;
+    }
+
+    #timeline .slanting-back{
+        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 2360px, 
+                                var(--main-bg-color) 2360px);
+        height: 2400px;
+        top: 4140px;
+    }
+ }
+
+ @media (max-width: 570px) {
+
+    #competences .slanting-back{
+        background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
+                                var(--secondary-bg-color-1) 980px, var(--main-bg-color) 980px);
+        height: 1100px;
+        top: 1450px;
+    }
+
+    #timeline .slanting-back{
+        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1860px, 
+                                var(--main-bg-color) 1860px);
+        height: 1900px;
+        top: 4000px;
+    }
+ }
+
+ @media (max-width: 570px) {
+
+    #timeline .slanting-back{
+        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 2400px, 
+                                var(--main-bg-color) 2400px);
+        height: 2450px;
+        top: 4080px;
+    }
+ }

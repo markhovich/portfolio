@@ -78,6 +78,11 @@
 			  opacity: 0.95;
 			}
 
+			.timeline2 ul li div p{
+				hyphens: auto;
+				overflow-wrap: break-word;
+			}
+
 			.timeline2 ul li:nth-child(odd) > div:hover {
 				opacity: 1;
 				transform: rotate(1deg);
@@ -118,6 +123,9 @@
 				text-align: right;
 			}
 
+			.timeline2 ul li:nth-child(odd) div p, .timeline2 ul li:nth-child(odd) div .time-title {
+				text-align: left;
+			}
 
 			.timeline2 ul li:nth-child(even) > div::before {
 			  right: -15px;
@@ -180,22 +188,21 @@
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 			@media screen and (max-width: 900px) {
-			  .timeline2 ul li div {
-				width: 250px;
-			  }
-			  .timeline2 ul li:nth-child(even) div {
-				left: -289px;
-				/*250+45-6*/
-			  }
-			}
+				.timeline2 ul li:nth-child(even) div p, .timeline2 ul li:nth-child(even) div .time-title {
+					text-align: left;
+				}
 
-			@media screen and (max-width: 600px) {
 			  .timeline2 ul li {
 				margin-left: 20px;
 			  }
-			  .timeline2 ul li div {
+			  .timeline2 ul li > div {
 				width: calc(100vw - 120px);
 			  }
+
+			  .timeline2 ul li div p{
+				width: calc(100vw - 120px);
+			  }
+
 			  .timeline2 ul li:nth-child(even) div {
 				left: 45px;
 			  }
@@ -205,41 +212,9 @@
 				border-color: transparent var(--secondary-bg-color-1) transparent transparent;
 			  }
 			  
-				
-				.timeline2 ul li:nth-child(odd) .time {
-					position: absolute;
-					top: 60px;
-					left: -23px;
-					width: 90px;
-					/*
-					transform: rotate(-90deg);
-					-webkit-transform:rotate(270deg);
-					*/
-					transform: rotate(0deg);
-					-webkit-transform:rotate(0deg);
-				}
-				.timeline2 ul li:nth-child(even) .time {
-					position: absolute;
-					top: 60px;
-					right: -67px;
-					width: 90px;
-					/*
-					transform: rotate(-90deg);
-					-webkit-transform:rotate(270deg);
-					*/
-					transform: rotate(0deg);
-					-webkit-transform:rotate(0deg);
-				}
-				.timeline2 ul li.in-view:nth-child(odd) .time {
-					transform: rotate(-90deg);
-					-webkit-transform:rotate(270deg);					 
-				}
-				.timeline2 ul li.in-view:nth-child(even) .time {
-					transform: rotate(-90deg);
-					-webkit-transform:rotate(270deg);
-				}
-			  
 			}
+
+
 .time-title{
 	color: var(--main-text-color)
 }

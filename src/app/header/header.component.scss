@@ -26,3 +26,30 @@ img{
 a{
     color: var(--main-text-color);
 }
+
+
+/***************** MEDIA QUERIES *************************/
+
+@media (max-width: 991px) {
+    .slanting-back{
+        height: 450px;
+    }
+ }
+
+ @media (max-width: 768px) {
+    .slanting-back{
+        height: 1000px;
+    }
+ }
+
+ @media (max-width: 575px) {
+    .slanting-back{
+        height: 1100px;
+    }
+ }
+
+ @media (max-width: 382px) {
+    .slanting-back{
+        height: 1000px;
+    }
+ }
