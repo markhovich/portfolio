@@ -115,14 +115,25 @@ h2{
         height: 1900px;
         top: 4000px;
     }
+
+    .project-comment{
+        height: 7rem;
+    }
  }
 
- @media (max-width: 570px) {
+ @media (max-width: 380px) {
+
+    #competences .slanting-back{
+        background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
+                                var(--secondary-bg-color-1) 1030px, var(--main-bg-color) 1030px);
+        height: 1150px;
+        top: 1500px;
+    }
 
     #timeline .slanting-back{
-        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 2400px, 
-                                var(--main-bg-color) 2400px);
-        height: 2450px;
-        top: 4080px;
+        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 2480px, 
+                                var(--main-bg-color) 2480px);
+        height: 2550px;
+        top: 3900px;
     }
  }
