@@ -11,6 +11,10 @@
     --third-color: rgb(226, 38, 38);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     line-height: 1.6rem;
     background-color: var(--main-bg-color) ;

@@ -27,6 +27,11 @@ a{
     color: var(--main-text-color);
 }
 
+.flag{
+    height: 1.3rem;
+    width: auto;
+}
+
 
 /***************** MEDIA QUERIES *************************/
 
@@ -44,12 +49,12 @@ a{
 
  @media (max-width: 575px) {
     .slanting-back{
-        height: 1100px;
+        height: 1200px;
     }
  }
 
  @media (max-width: 382px) {
     .slanting-back{
-        height: 1000px;
+        height: 1100px;
     }
  }
