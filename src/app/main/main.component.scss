@@ -16,26 +16,32 @@ p{
     z-index: -1; 
 }
 
-#competences{
-    color: var(--main-bg-color);
+svg{
+    position: absolute;
+    width: 100%;
+    height: 10vw;
 }
 
-#competences .slanting-back{
-    background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
-                            var(--secondary-bg-color-1) 530px, var(--main-bg-color) 530px);
-    height: 650px;
-    top: 690px;
+.svg-top{
+    top: 0;
+}
+
+.svg-bottom{
+    bottom: 0;
+}
+
+#competences, #timeline{
+    position: relative;
+    color: var(--main-bg-color);
+    background-image: linear-gradient(var(--secondary-bg-color-1), var(--secondary-bg-color-2));
+}
+
+#competences{
+    height: 500px;
 }
 
 #timeline{
-    //background: linear-gradient(30deg, var(--secondary-bg-color-1), var(--secondary-bg-color-2));
-    color: var(--main-bg-color)
-}
-
-#timeline .slanting-back{
-    background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1710px, var(--main-bg-color) 1710px);
-    height: 1740px;
-    top: 2030px;
+    height: 1700px;
 }
 
 h2{
@@ -73,67 +79,31 @@ h2{
 
 /***************** MEDIA QUERIES *************************/
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
-    #timeline .slanting-back{
-        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1790px, 
-                                var(--main-bg-color) 1790px);
-        height: 1900px;
-        top: 1740px;
-    }
- }
-
- @media (max-width: 768px) {
-
-    #competences .slanting-back{
-        background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
-                                var(--secondary-bg-color-1) 1030px, var(--main-bg-color) 1030px);
-        height: 1150px;
-        top: 1290px;
+    #competences{
+        height: 1000px;
     }
 
-    #timeline .slanting-back{
-        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1750px, 
-                                var(--main-bg-color) 1750px);
-        height: 1800px;
-        top: 4140px;
+    #timeline{
+        height: 1770px;
     }
- }
+}
 
- @media (max-width: 570px) {
+@media (max-width: 570px) {
 
-    #competences .slanting-back{
-        background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
-                                var(--secondary-bg-color-1) 980px, var(--main-bg-color) 980px);
-        height: 1100px;
-        top: 1550px;
-    }
-
-    #timeline .slanting-back{
-        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 1860px, 
-                                var(--main-bg-color) 1860px);
-        height: 1900px;
-        top: 4400px;
+    #timeline{
+        height: 1850px;
     }
 
     .project-comment{
         height: 7rem;
     }
- }
+}
 
- @media (max-width: 380px) {
+@media (max-width: 490px) {
 
-    #competences .slanting-back{
-        background: linear-gradient(-5deg, var(--main-bg-color) 120px, var(--secondary-bg-color-2) 120px, 
-                                var(--secondary-bg-color-1) 1030px, var(--main-bg-color) 1030px);
-        height: 1150px;
-        top: 1600px;
+    #timeline{
+        height: 1950px;
     }
-
-    #timeline .slanting-back{
-        background: linear-gradient(5deg, var(--secondary-bg-color-1) , var(--secondary-bg-color-2) 2480px, 
-                                var(--main-bg-color) 2480px);
-        height: 2550px;
-        top: 4450px;
-    }
- }
+}
