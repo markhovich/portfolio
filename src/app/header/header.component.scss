@@ -35,6 +35,12 @@ a{
 
 /***************** MEDIA QUERIES *************************/
 
+@media (max-width: 1920px) {
+    header{
+        height: 510px;
+    }
+}
+
 @media (max-width: 991px) {
     header{
         height: 450px;
