@@ -121,10 +121,12 @@
 
 			.timeline2 ul li:nth-child(even) div p, .timeline2 ul li:nth-child(even) div .time-title {
 				text-align: right;
+				overflow-wrap: break-word;
 			}
 
 			.timeline2 ul li:nth-child(odd) div p, .timeline2 ul li:nth-child(odd) div .time-title {
 				text-align: left;
+				overflow-wrap: break-word;
 			}
 
 			.timeline2 ul li:nth-child(even) > div::before {
@@ -184,12 +186,16 @@
 				-webkit-transform:rotate(0deg);
 			}
 
+			.badge{
+				overflow-wrap: break-word;
+			}
 			/* GENERAL MEDIA QUERIES
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 			@media screen and (max-width: 900px) {
 				.timeline2 ul li:nth-child(even) div p, .timeline2 ul li:nth-child(even) div .time-title {
 					text-align: left;
+					overflow-wrap: break-word;
 				}
 
 			  .timeline2 ul li {
