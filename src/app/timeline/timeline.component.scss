@@ -44,21 +44,18 @@
 			.timeline2 ul li {
 			  list-style-type: none;
 			  position: relative;
-			      width: 2px;/* width: 6px; */
+				width: 2px;/* width: 6px; */
 			  margin: 0 auto;
 				padding-top: 10px;/* 50px; */
 				padding-bottom: 10px;/* padding-bottom: 20px; = center padding-bottom: 10px; = center */
 			 //background: #fff; /* background: black;  */
 			  
 				border-left: 3px dashed var(--third-color);
-				
 			}
 
-			 
 			.timeline2 ul li::after {
-			  content: '';
+				content: '';
 			  position: absolute;
-			  left: 50%;
 			  top: 30px; /* bottom: 0;  bottom: 50%;=center top: 30px;=top  */ 
 			  //transform: translateX(-55%);/* transform: translateX(-50%); */
 			  //-webkit-transform: translateX(-55%);
@@ -67,6 +64,14 @@
 			  border-radius: 50%;
 			  background: var(--main-bg-color);
 			  border: 3px solid var(--third-color);
+			}
+
+			.timeline2 ul li:nth-child(odd)::after {
+			  left: 0; /* bottom: 0;  bottom: 50%;=center top: 30px;=top  */ 
+			}
+
+			.timeline2 ul li:nth-child(even)::after {
+			  left: -33px;			  
 			}
 
 			.timeline2 ul li > div {
@@ -116,7 +121,7 @@
 			}
 
 			.timeline2 ul li:nth-child(even) > div {
-              left: -639px;
+              left: -648px;
 			}
 
 			.timeline2 ul li:nth-child(even) div p, .timeline2 ul li:nth-child(even) div .time-title {
@@ -216,6 +221,10 @@
 				left: -15px;
 				border-width: 16px 16px 16px 0; /* border-width: 8px 16px 8px 0;  */
 				border-color: transparent var(--secondary-bg-color-1) transparent transparent;
+			  }
+
+			  .timeline2 ul li:nth-child(even)::after {
+				left: 0;			  
 			  }
 			  
 			}

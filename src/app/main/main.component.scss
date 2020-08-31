@@ -36,12 +36,16 @@ svg{
 }
 
 #competences{
-    height: 500px;
+    height: 600px;
     background-image: linear-gradient(var(--secondary-bg-color-1), var(--secondary-bg-color-2));
 }
 
+#competences .container, #timeline .container{
+    margin-top: 4.5rem;
+}
+
 #timeline{
-    height: 1700px;
+    height: 1750px;
     background-image: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
 }
 
