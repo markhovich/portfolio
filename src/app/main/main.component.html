@@ -1,3 +1,5 @@
+<div id="page" (click)=removeCurtain()></div>
+
 <div>  
     <section id="presentation">
         <div class="container mx-auto">
@@ -62,72 +64,351 @@
     <section id="projects">
         <div class="container mx-auto">
             
-            
             <h2>Projets Réalisés</h2>
             
             <div class="row">
              
                 <div class="project-card col-lg-4">
-                    <h3>CrazyTrip</h3>
-                    <img class="mt-3" src="./assets/projects/crazytrip.jpg" alt="">
+                    <h3>Blog Voyage                        
+                        <small class="badge badge-success">réalisé en solo</small>
+                    </h3>
+                    
+                    <img class="mt-3" src="./assets/projects/blog/crazytrip.jpg" alt="">
                     <div class="project-body">
                         <hr>
-                        <p class="project-comment">Blog voyage, l'admnistrateur gère les articles et les 
-                            utilisateurs peuvent commenter les articles après authentification
+                        <p class="project-comment">L'admnistrateur gère les articles et les 
+                            utilisateurs peuvent commenter les articles après authentification.
                         </p>
-                        <hr>
-                        <div class="techno">Techno utilisées<br> 
-                            <em>en front : Bootstrap, Angular <br>en back : Spring, Hibernate, REST, mySQL</em>
+                    </div>
+                   
+                    <a class="btn btn-danger btn-block" (click)="onClickDisplay(0)">En savoir plus</a>
+                    
+                </div>
+                <!-- Bloc invisible se révélant au clique -->
+                <div class="project-details">
+                    <div class="cross" (click)="removeCurtain()">X</div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                                <em>
+                                    <h5>Front</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <span class="mr-3">
+                                                <img src="./assets/icons/html-5.svg" alt="">
+                                            HTML
+                                            </span> 
+                                            <span class="mr-3">
+                                            <img src="./assets/icons/css-3.svg" alt="">
+                                            CSS
+                                            </span>
+                                            <img src="./assets/icons/bootstrap.svg" alt="">
+                                            Bootstrap</li>
+                                        <li class="list-group-item">
+                                            <span class="mr-3">
+                                            <img src="./assets/icons/typescript.png" alt="">
+                                            TypeScript
+                                            </span>
+                                            <img src="./assets/icons/angular.png" alt="">
+                                            Angular</li>
+                                    </ul>
+                                    <a href="https://github.com/markhovich/crazy-trip-v2" target="_blank"
+                             class="btn-outline-danger btn btn-block mt-4">Voir le code source du front sur GitHub</a>
+                                    <h5 class="mt-2">Back</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <span class="mr-3">
+                                            <img src="./assets/icons/java.svg" alt="">
+                                            Java 
+                                            </span>
+                                            <img src="./assets/icons/spring-boot.svg" alt="">
+                                            Spring</li>
+                                        <li class="list-group-item">
+                                            <span class="mr-3">
+                                            <img src="./assets/icons/rest.png" alt="">
+                                            REST 
+                                            </span>
+                                            <img src="./assets/icons/postman.png" alt="">
+                                            Postman</li>
+                                        <li class="list-group-item">
+                                            <span class="mr-3">
+                                            <img src="./assets/icons/hibernate.svg" alt="">
+                                            Hibernate 
+                                            </span>
+                                            <img src="./assets/icons/mysql.svg" alt="">
+                                            mySQL</li>
+                                    </ul>
+                                </em>
+
+                             <a href="https://github.com/markhovich/crazy-trip-api" target="_blank"
+                             class="btn-outline-danger btn btn-block mt-4">Voir le code source du back sur GitHub</a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Blog Voyage</h3>
+
+                            <form>
+                                <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+                                <input type="radio" name="fancy" value="hearts" id="hearts" />
+                                <input type="radio" name="fancy" value="spades" id="spades" />
+                                <input type="radio" name="fancy" value="diamonds" id="diamonds" />			
+                                <label for="clubs">
+                               
+                                    <img src="./assets/projects/blog/crazytrip-2.jpg" alt="Image non chargée">
+                                    <p>L'admnistrateur gère les articles et les 
+                                        utilisateurs peuvent commenter les articles après authentification.
+                                    </p>
+                                </label>
+                                <label for="hearts">
+                                    <img src="./assets/projects/blog/crazytrip-3.jpg" alt="Image non chargée">
+                                    <p>L'utilisateur peut consulter la liste des articles et effectuer une recherche 
+                                        par mots clés.
+                                    </p>
+                                </label>
+                                <label for="spades">
+                                    <img src="./assets/projects/blog/crazytrip-4.jpg" alt="Image non chargée">
+                                    <p>Il peut consulter le corps de l'article, voir les commentaires
+                                         et lui-même commenter celui-ci en-dessous
+                                    </p>
+                                </label>
+                                <label for="diamonds">                            
+                                    <img src="./assets/projects/blog/crazytrip-5.jpg" alt="Image non chargée">
+                                    <p>Il aura fallu au préalable créer un compte puis s'être authentifié
+                                    </p>
+                                </label>
+                    
+                            </form>
                         </div>
                     </div>
                    
-                    <a href="https://github.com/markhovich/crazy-trip-v2" target="_blank"
-                     class="btn btn-danger btn-block">En savoir plus</a>
-                    
                 </div>
+                <!-- Fin bloc -->
                 <div class="project-card col-lg-4">
-                    <h3>Spotify</h3>
-                    <img class="mt-3" src="./assets/projects/game-of-life.jpg" alt="Image non chargée">
+                    <h3>Clone de Spotify
+                        <small class="badge badge-info">réalisé en équipe</small>
+                    </h3>
+                    <img class="mt-3" src="./assets/projects/spotify.jpg" alt="Image non chargée">
                     <div class="project-body">
                         <hr>                        
                         <p class="project-comment"> 
                             Lecteur de musique intégrant
                             un gestionnaire de playlist
-                            réalisé en binôme avec
+                            réalisé en collaboration avec
                             <a href="https://www.linkedin.com/in/kevin-monac-5579b0116/" target="_blank">
                                 Kevin MONAC
                             </a>
+                            avec utilisation de Git
                         </p>
-                        <hr>
-                        <div class="techno">
-                            Techno utilisées<br> 
-                            <em>HTML/CSS, Bootstrap, JavaScript, jQuery</em>
-                        </div>
                     </div>
-                    <a href="https://github.com/markhovich/game-of-life" target="_blank"
+                    <a (click)="onClickDisplay(1)"
                      class="btn btn-danger btn-block">En savoir plus</a>
-                    
                 </div>
+<!-- Bloc invisible se révélant au clique -->
+<div class="project-details">
+    <div class="cross" (click)="removeCurtain()">X</div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+                <em>
+                    <h5>Front</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="mr-3">
+                                <img src="./assets/icons/html-5.svg" alt="">
+                            HTML
+                            </span> 
+                            <span class="mr-3">
+                            <img src="./assets/icons/css-3.svg" alt="">
+                            CSS
+                            </span>
+                            <img src="./assets/icons/material.png" alt="">
+                            Material</li>
+                        <li class="list-group-item">
+                            <span class="mr-3">
+                            <img src="./assets/icons/typescript.png" alt="">
+                            TypeScript
+                            </span>
+                            <img src="./assets/icons/angular.png" alt="">
+                            Angular</li>
+                    </ul>
+                    <a href="https://github.com/markhovich/crazy-trip-v2" target="_blank"
+             class="btn-outline-danger btn btn-block mt-4">Voir le code source du front sur GitHub</a>
+                    <h5 class="mt-2">Back</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="mr-3">
+                            <img src="./assets/icons/java.svg" alt="">
+                            Java 
+                            </span>
+                            <img src="./assets/icons/spring-boot.svg" alt="">
+                            Spring</li>
+                        <li class="list-group-item">
+                            <span class="mr-3">
+                            <img src="./assets/icons/rest.png" alt="">
+                            REST 
+                            </span>
+                            <img src="./assets/icons/postman.png" alt="">
+                            Postman</li>
+                        <li class="list-group-item">
+                            <span class="mr-3">
+                            <img src="./assets/icons/hibernate.svg" alt="">
+                            Hibernate 
+                            </span>
+                            <img src="./assets/icons/mysql.svg" alt="">
+                            mySQL</li>
+                    </ul>
+                </em>
 
+             <a href="https://github.com/markhovich/crazy-trip-api" target="_blank"
+             class="btn-outline-danger btn btn-block mt-4">Voir le code source du back sur GitHub</a>
+        </div>
+        <div class="col-md-8">
+            <h3>Spotify Clone</h3>
+
+            <form>
+                <input type="radio" name="fancy" autofocus value="clubs" id="spot1" />
+                <input type="radio" name="fancy" value="hearts" id="spot2" />
+                <input type="radio" name="fancy" value="spades" id="spot3" />
+                <input type="radio" name="fancy" value="diamonds" id="spot4" />			
+                <label for="spot1">
+               
+                    <img src="./assets/projects/spotify/spotify.jpg" alt="Image non chargée">
+                    <p>Lecteur de musique intégrant un gestionnaire de playlist réalisé en collaboration avec Kevin MONAC avec utilisation de Git (commit/push/pull/merge).
+                    </p>
+                </label>
+                <label for="spot2">
+                    <img src="./assets/projects/spotify/spotify-4.jpg" alt="Image non chargée">
+                    <p>L'utilisateur peut créer ses playlists en sélectionnant les morceaux dans les albums disponibles.
+                    </p>
+                </label>
+                <label for="spot3">
+                    <img src="./assets/projects/spotify/spotify-3.jpg" alt="Image non chargée">
+                    <p>Une fois la playlist créée il peut bien sûr la lire ainsi que supprimer ou ajouter des titres,
+                        modifier son nom ou encore la supprimer irrémédiablement.
+                    </p>
+                </label>
+                <label for="spot4">                            
+                    <img src="./assets/projects/spotify/spotify-5.jpg" alt="Image non chargée">
+                    <p>Avant tout cela, il aura fallu au préalable créer un compte puis s'être authentifié.
+                    </p>
+                </label>
+    
+            </form>
+        </div>
+    </div>
+   
+</div>
+<!-- Fin bloc -->
                 <div class="project-card col-lg-4">
-                    <h3>Concours photo</h3>
-                    <img class="mt-3" src="./assets/projects/crazypic.jpg" alt="">
+                    <h3>Concours photo
+                        <small class="badge badge-success">réalisé en solo</small>
+                    </h3>
+                    <img class="mt-3" src="./assets/projects/contest/crazypic.jpg" alt="">
                     <div class="project-body">
                         <hr>
                         <p class="project-comment">L'utilisateur peut créer un concours, soumettre les photos
                              et partager le lien pour que les personnes votent
                         </p>
-                        <hr>
-                        <div class="techno">Techno utilisées<br>
-                            <em>en front : Bootstrap, Angular <br>en back : Spring, Hibernate, REST, mySQL</em>
-                        </div>
                     </div>
                     
-                    <a href="https://github.com/markhovich/crazy-pic" target="_blank"
+                    <a (click)="onClickDisplay(2)"
                     class="btn btn-danger btn-block">En savoir plus</a>
                 </div>
             </div>
         </div>
+        <!-- Bloc invisible se révélant au clique -->
+        <div class="project-details">
+            <div class="cross" (click)="removeCurtain()">X</div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                        <em>
+                            <h5>Front</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <span class="mr-3">
+                                        <img src="./assets/icons/html-5.svg" alt="">
+                                    HTML
+                                    </span> 
+                                    <span class="mr-3">
+                                    <img src="./assets/icons/css-3.svg" alt="">
+                                    CSS
+                                    </span>
+                                    <img src="./assets/icons/bootstrap.svg" alt="">
+                                    Bootstrap</li>
+                                <li class="list-group-item">
+                                    <span class="mr-3">
+                                    <img src="./assets/icons/typescript.png" alt="">
+                                    TypeScript
+                                    </span>
+                                    <img src="./assets/icons/angular.png" alt="">
+                                    Angular</li>
+                            </ul>
+                            <a href="https://github.com/markhovich/crazy-pic" target="_blank"
+                     class="btn-outline-danger btn btn-block mt-4">Voir le code source du front sur GitHub</a>
+                            <h5 class="mt-2">Back</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <span class="mr-3">
+                                    <img src="./assets/icons/java.svg" alt="">
+                                    Java 
+                                    </span>
+                                    <img src="./assets/icons/spring-boot.svg" alt="">
+                                    Spring</li>
+                                <li class="list-group-item">
+                                    <span class="mr-3">
+                                    <img src="./assets/icons/rest.png" alt="">
+                                    REST 
+                                    </span>
+                                    <img src="./assets/icons/postman.png" alt="">
+                                    Postman</li>
+                                <li class="list-group-item">
+                                    <span class="mr-3">
+                                    <img src="./assets/icons/hibernate.svg" alt="">
+                                    Hibernate 
+                                    </span>
+                                    <img src="./assets/icons/mysql.svg" alt="">
+                                    mySQL</li>
+                            </ul>
+                        </em>
+
+                     <a href="https://github.com/markhovich/picture-contest-api" target="_blank"
+                     class="btn-outline-danger btn btn-block mt-4">Voir le code source du back sur GitHub</a>
+                </div>
+                <div class="col-md-8">
+                    <h3>Concours photo</h3>
+
+                    <form>
+                        <input type="radio" name="fancy" autofocus value="clubs" id="pic1" />
+                        <input type="radio" name="fancy" value="hearts" id="pic2" />
+                        <input type="radio" name="fancy" value="spades" id="pic3" />
+                        <input type="radio" name="fancy" value="diamonds" id="pic4" />			
+                        <label for="pic1">
+                            <img src="./assets/projects/contest/crazypic.jpg" alt="Image non chargée">
+                            <p>L'utilisateur peut créer un concours, soumettre les photos
+                                et partager le lien pour que les personnes votent.
+                            </p>
+                        </label>
+                        <label for="pic2">
+                            <img src="./assets/projects/contest/crazypic-3.jpg" alt="Image non chargée">
+                            <p>L'utilisateur peut consulter la liste des articles et effectuer une recherche 
+                                par mots clés.
+                            </p>
+                        </label>
+                        <label for="pic3">
+                            <img src="./assets/projects/contest/crazypic-4.jpg" alt="Image non chargée">
+                            <p>Il peut consulter le corps de l'article, voir les commentaires
+                                 et lui-même commenter celui-ci en-dessous
+                            </p>
+                        </label>
+                        <label for="pic4">                            
+                            <img src="./assets/projects/contest/crazypic-5.jpg" alt="Image non chargée">
+                            <p>Il aura fallu au préalable créer un compte puis s'être authentifié
+                            </p>
+                        </label>
+            
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Fin bloc -->
     </section>
 
     <section id="timeline">
