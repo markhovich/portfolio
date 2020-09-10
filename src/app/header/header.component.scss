@@ -6,6 +6,10 @@ header{
     background-image: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
 }
 
+header .container{
+    padding-top: 4rem;
+}
+
 svg {
     position: absolute;
     bottom: 0;
@@ -16,10 +20,10 @@ svg {
 
 #id-photo{
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
-img{
+#id-photo img{
     width: 80%;
 }
 

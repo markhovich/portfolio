@@ -1,13 +1,18 @@
 nav {
-    padding-top: 1.2rem;
+    position: fixed;
+    padding-top: 0.2rem;
+    z-index: 10;
+    width: 100vw;
+
 }
 
 .navbar{
-
+    max-width: 700px;
+    margin: auto;
 }
 
-.nav-element{
-
+.scrolled{
+    background: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
 }
 
 nav ul li{
@@ -15,9 +20,19 @@ nav ul li{
     display: inline-block;
 }
 
-a {
+.navbar-light .navbar-nav .nav-link {
     color: var(--main-text-color);
     font-size: 1.4rem;
     transition: 0.5s;
 }
 
+img{
+    width: 1.6rem;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        background: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
+    }
+}

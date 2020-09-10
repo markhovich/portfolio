@@ -45,7 +45,6 @@ svg{
 }
 
 #timeline{
-    height: 1750px;
     background-image: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
 }
 
@@ -98,7 +97,6 @@ h3 small{
   top: 10vh;
   right: 20vh;
   left: 20vh;
-  bottom: 5vh;
   background-color: black;
   color: var(--secondary-bg-color-2);
   padding: 2rem;
@@ -106,8 +104,17 @@ h3 small{
   transition: 0.3s;
 }
 
+@media (max-width: 1100px) {
+
+    .displayed{
+        right: 0;
+        left: 0;       
+    }
+}
+
 li img{
     width: 25px;
+    margin-right: 0.5rem;
 }
 
 .curtain{
@@ -204,7 +211,6 @@ label:after {
 	padding: 1rem;
 	font-size: 3rem;
 	height: 10rem;
-	vertical-align: middle;
 	line-height: 10rem;
 	top: 50%;
 	transform: translate3d(0, -50%, 0);
@@ -244,73 +250,20 @@ label:after {
 
 /***************** MEDIA QUERIES *************************/
 
+
 @media (max-width: 768px) {
 
     #competences{
         height: 1000px;
     }
 
-    #timeline{
-        height: 1770px;
-    }
 }
 
 @media (max-width: 570px) {
-
-    #timeline{
-        height: 1850px;
-    }
 
     .project-comment{
         height: 7rem;
     }
 }
 
-@media (max-width: 490px) {
 
-    #timeline{
-        height: 2150px;
-    }
-}
-
-@media (max-width: 454px) {
-
-    #timeline{
-        height: 2350px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    #timeline{
-        height: 2550px;
-    }
-}
-
-@media (max-width: 372px) {
-
-    #timeline{
-        height: 2750px;
-    }
-}
-
-@media (max-width: 350px) {
-
-    #timeline{
-        height: 2950px;
-    }
-}
-
-@media (max-width: 320px) {
-
-    #timeline{
-        height: 3200px;
-    }
-}
-
-@media (max-width: 305px) {
-
-    #timeline{
-        height: 3500px;
-    }
-}
