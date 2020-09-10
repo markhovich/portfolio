@@ -10,6 +10,14 @@ header .container{
     padding-top: 4rem;
 }
 
+button a{
+    color: #ffc107;
+}
+
+button:hover a{
+    color: var(--main-text-color);
+}
+
 svg {
     position: absolute;
     bottom: 0;
@@ -35,7 +43,6 @@ a{
     height: 1.3rem;
     width: auto;
 }
-
 
 /***************** MEDIA QUERIES *************************/
 
