@@ -8,25 +8,21 @@
             <p>
                 <strong>Passionné</strong> d'informatique depuis toujours, je suis à la recherche d'un emploi de <strong>développeur</strong> 
                 front ou back avec une appétence pour le front avec <strong>Angular</strong> et les technologies basées sur JavaScript.
-                J'ai aussi fait du back avec <strong>Java</strong>.
+                
             </p>
-            <p>Ayant acquis la base qu'est HTML/CSS, j'ai commencé à apprendre le PHP de manière
+            <p>Je maîtrise HTML/CSS et j'ai appris le PHP de manière
                 autodidacte avant d'effectuer fin 2019 une formation certifiante M2I <strong>Développeur Java Fullstack</strong> 
-                grâce à laquelle j'ai pu <strong>monter en compétences</strong>.<br>
+                grâce à laquelle j'ai pu <strong>compléter et valider mes connaissances</strong>.<br>
                 Le programme était basé sur les concepts de la programmation orientée objet, la gestion de bases de données, 
                 les notions de modélisation et le développement d'application.<br>
-                Le plus important est le fait que nous avons <strong>appris à apprendre</strong> et à chercher l'information <strong>efficacement</strong>,
-                 points essentiels du métier de développeur.
-            </p>
-            <p>Par la suite, j'ai pu mettre à profit ces connaissances en réalisant plusieurs projets personnels qui m'ont
-                permis d'avoir <strong>mes premières expériences</strong> de création d'application web.
+                Ayant appris à <strong>comprendre et à chercher l'information efficacement</strong>,
+                j’ai pu mettre à profit mes connaissances et concrétiser mes premières expériences de création d'applications web.
             </p>
             <p>
-                J'ai, de plus, acquis des compétences très variées au vu de mes expériences dans de<strong> nombreux domaines</strong> dont 
-                le marketing qui m'a notamment amené à mieux connaître le métier de développeur lorsque j'ai dû mettre à jour 
-                le site internet de la société.
-    
+                Fort d’être monté en compétences, 
+                je me sens désormais prêt à intégrer une <strong>équipe de développeurs professionnels</strong>.
             </p>
+            
         </div>
     </section>
     
@@ -118,66 +114,16 @@
                         </p>
                     </div>
                    
-                    <a class="btn btn-danger btn-block" (click)="onClickDisplay(0)">En savoir plus</a>
+                    <a href="#header" class="btn btn-danger btn-block" (click)="onClickDisplay(0)">En savoir plus</a>
                     
                 </div>
                 <!-- Bloc invisible se révélant au clique -->
                 <div class="project-details">
-                    <div class="cross" (click)="removeCurtain()">X</div>
+                    <a href="#projects" class="cross" (click)="removeCurtain()">X</a>
                     <div class="row mt-4">
                         <div class="col-lg-4">
-                                <em>
-                                    <h5>Front</h5>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            <span class="mr-3">
-                                                <img src="./assets/icons/html-5.svg" alt="">
-                                            HTML
-                                            </span> 
-                                            <span class="mr-3">
-                                            <img src="./assets/icons/css-3.svg" alt="">
-                                            CSS
-                                            </span>
-                                            <img src="./assets/icons/bootstrap.svg" alt="">
-                                            Bootstrap</li>
-                                        <li class="list-group-item">
-                                            <span class="mr-3">
-                                            <img src="./assets/icons/typescript.png" alt="">
-                                            TypeScript
-                                            </span>
-                                            <img src="./assets/icons/angular.png" alt="">
-                                            Angular</li>
-                                    </ul>
-                                    <a href="https://github.com/markhovich/crazy-trip-v2" target="_blank"
-                             class="btn-outline-danger btn btn-block mt-4">Voir le code source du front sur GitHub</a>
-                                    <h5 class="mt-2">Back</h5>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            <span class="mr-3">
-                                            <img src="./assets/icons/java.svg" alt="">
-                                            Java 
-                                            </span>
-                                            <img src="./assets/icons/spring-boot.svg" alt="">
-                                            Spring</li>
-                                        <li class="list-group-item">
-                                            <span class="mr-3">
-                                            <img src="./assets/icons/rest.png" alt="">
-                                            REST 
-                                            </span>
-                                            <img src="./assets/icons/postman.png" alt="">
-                                            Postman</li>
-                                        <li class="list-group-item">
-                                            <span class="mr-3">
-                                            <img src="./assets/icons/hibernate.svg" alt="">
-                                            Hibernate 
-                                            </span>
-                                            <img src="./assets/icons/mysql.svg" alt="">
-                                            mySQL</li>
-                                    </ul>
-                                </em>
-
-                             <a href="https://github.com/markhovich/crazy-trip-api" target="_blank"
-                             class="btn-outline-danger btn btn-block mt-4">Voir le code source du back sur GitHub</a>
+                            <app-technos [backUrl]="gitHubUrl[0].back"
+                            [frontUrl]="gitHubUrl[0].front"></app-technos>
                         </div>
                         <div class="col-lg-8">
                             <h3>Blog Voyage</h3>
@@ -186,9 +132,9 @@
                                 <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
                                 <input type="radio" name="fancy" value="hearts" id="hearts" />
                                 <input type="radio" name="fancy" value="spades" id="spades" />
-                                <input type="radio" name="fancy" value="diamonds" id="diamonds" />			
+                                <input type="radio" name="fancy" value="diamonds" id="diamonds" />	
+
                                 <label for="clubs">
-                               
                                     <img src="./assets/projects/blog/crazytrip-2.jpg" alt="Image non chargée">
                                     <p>L'admnistrateur gère les articles et les 
                                         utilisateurs peuvent commenter les articles après authentification.
@@ -208,7 +154,8 @@
                                 </label>
                                 <label for="diamonds">                            
                                     <img src="./assets/projects/blog/crazytrip-5.jpg" alt="Image non chargée">
-                                    <p>Il aura fallu au préalable créer un compte puis s'être authentifié
+                                    <p>Il aura fallu au préalable créer un compte puis s'être authentifié pour avoir 
+                                        accès à toutes ces fonctionnalités.
                                     </p>
                                 </label>
                     
@@ -240,61 +187,10 @@
                 </div>
 <!-- Bloc invisible se révélant au clique -->
 <div class="project-details">
-    <div class="cross" (click)="removeCurtain()">X</div>
+    <a href="#projects" class="cross" (click)="removeCurtain()">X</a>
     <div class="row mt-4">
         <div class="col-lg-4">
-                <em>
-                    <h5>Front</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="mr-3">
-                                <img src="./assets/icons/html-5.svg" alt="">
-                            HTML
-                            </span> 
-                            <span class="mr-3">
-                            <img src="./assets/icons/css-3.svg" alt="">
-                            CSS
-                            </span>
-                            <img src="./assets/icons/material.png" alt="">
-                            Material</li>
-                        <li class="list-group-item">
-                            <span class="mr-3">
-                            <img src="./assets/icons/typescript.png" alt="">
-                            TypeScript
-                            </span>
-                            <img src="./assets/icons/angular.png" alt="">
-                            Angular</li>
-                    </ul>
-                    <a href="https://github.com/markhovich/crazy-trip-v2" target="_blank"
-             class="btn-outline-danger btn btn-block mt-4">Voir le code source du front sur GitHub</a>
-                    <h5 class="mt-2">Back</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="mr-3">
-                            <img src="./assets/icons/java.svg" alt="">
-                            Java 
-                            </span>
-                            <img src="./assets/icons/spring-boot.svg" alt="">
-                            Spring</li>
-                        <li class="list-group-item">
-                            <span class="mr-3">
-                            <img src="./assets/icons/rest.png" alt="">
-                            REST 
-                            </span>
-                            <img src="./assets/icons/postman.png" alt="">
-                            Postman</li>
-                        <li class="list-group-item">
-                            <span class="mr-3">
-                            <img src="./assets/icons/hibernate.svg" alt="">
-                            Hibernate 
-                            </span>
-                            <img src="./assets/icons/mysql.svg" alt="">
-                            mySQL</li>
-                    </ul>
-                </em>
-
-             <a href="https://github.com/markhovich/crazy-trip-api" target="_blank"
-             class="btn-outline-danger btn btn-block mt-4">Voir le code source du back sur GitHub</a>
+             <app-technos [frontUrl]="gitHubUrl[1].front" [backUrl]="gitHubUrl[1].back"></app-technos>
         </div>
         <div class="col-lg-8">
             <h3>Spotify Clone</h3>
@@ -352,61 +248,10 @@
         </div>
         <!-- Bloc invisible se révélant au clique -->
         <div class="project-details">
-            <div class="cross" (click)="removeCurtain()">X</div>
+            <a href="#projects" class="cross" (click)="removeCurtain()">X</a>
             <div class="row mt-4">
                 <div class="col-lg-4">
-                        <em>
-                            <h5>Front</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <span class="mr-3">
-                                        <img src="./assets/icons/html-5.svg" alt="">
-                                    HTML
-                                    </span> 
-                                    <span class="mr-3">
-                                    <img src="./assets/icons/css-3.svg" alt="">
-                                    CSS
-                                    </span>
-                                    <img src="./assets/icons/bootstrap.svg" alt="">
-                                    Bootstrap</li>
-                                <li class="list-group-item">
-                                    <span class="mr-3">
-                                    <img src="./assets/icons/typescript.png" alt="">
-                                    TypeScript
-                                    </span>
-                                    <img src="./assets/icons/angular.png" alt="">
-                                    Angular</li>
-                            </ul>
-                            <a href="https://github.com/markhovich/crazy-pic" target="_blank"
-                     class="btn-outline-danger btn btn-block mt-4">Voir le code source du front sur GitHub</a>
-                            <h5 class="mt-2">Back</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <span class="mr-3">
-                                    <img src="./assets/icons/java.svg" alt="">
-                                    Java 
-                                    </span>
-                                    <img src="./assets/icons/spring-boot.svg" alt="">
-                                    Spring</li>
-                                <li class="list-group-item">
-                                    <span class="mr-3">
-                                    <img src="./assets/icons/rest.png" alt="">
-                                    REST 
-                                    </span>
-                                    <img src="./assets/icons/postman.png" alt="">
-                                    Postman</li>
-                                <li class="list-group-item">
-                                    <span class="mr-3">
-                                    <img src="./assets/icons/hibernate.svg" alt="">
-                                    Hibernate 
-                                    </span>
-                                    <img src="./assets/icons/mysql.svg" alt="">
-                                    mySQL</li>
-                            </ul>
-                        </em>
-
-                     <a href="https://github.com/markhovich/picture-contest-api" target="_blank"
-                     class="btn-outline-danger btn btn-block mt-4">Voir le code source du back sur GitHub</a>
+                    <app-technos [frontUrl]="gitHubUrl[2].front" [backUrl]="gitHubUrl[2].back"></app-technos>
                 </div>
                 <div class="col-lg-8">
                     <h3>Concours photo</h3>
@@ -424,19 +269,20 @@
                         </label>
                         <label for="pic2">
                             <img src="./assets/projects/contest/crazypic.jpg" alt="Image non chargée">
-                            <p>L'utilisateur peut consulter la liste des articles et effectuer une recherche 
-                                par mots clés.
+                            <p>L'utilisateur peut créer un concours, soumettre les photos
+                                et partager le lien pour que les personnes votent.
                             </p>
                         </label>
                         <label for="pic3">
                             <img src="./assets/projects/contest/crazypic.jpg" alt="Image non chargée">
-                            <p>Il peut consulter le corps de l'article, voir les commentaires
-                                 et lui-même commenter celui-ci en-dessous
+                            <p>L'utilisateur peut créer un concours, soumettre les photos
+                                et partager le lien pour que les personnes votent.
                             </p>
                         </label>
                         <label for="pic4">                            
                             <img src="./assets/projects/contest/crazypic.jpg" alt="Image non chargée">
-                            <p>Il aura fallu au préalable créer un compte puis s'être authentifié
+                            <p>L'utilisateur peut créer un concours, soumettre les photos
+                                et partager le lien pour que les personnes votent.
                             </p>
                         </label>
             
