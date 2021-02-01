@@ -38,7 +38,7 @@ export class NavbarComponent implements OnInit {
     console.log(polygonList);
     for(let i=0; i<polygonList.length; i++){
       if(this.theme){
-        polygonList[i].setAttribute('fill', 'black');
+        polygonList[i].setAttribute('fill', '#222121');
       } else {
         polygonList[i].setAttribute('fill', 'white');
       }
