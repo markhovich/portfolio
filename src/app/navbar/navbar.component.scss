@@ -3,16 +3,26 @@ nav {
     padding-top: 0.2rem;
     z-index: 10;
     width: 100vw;
-
 }
 
 .navbar{
+    position: relative;
     max-width: 700px;
     margin: auto;
 }
 
+#navbar-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .scrolled{
     background: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
+    animation: background-opacity 0.8s linear;
+    animation-fill-mode: forwards;
 }
 
 nav ul li{
@@ -30,9 +40,79 @@ img{
     width: 1.6rem;
 }
 
+/************ TOGGLE BUTTON ********************/
+
+.toggle-container{
+    position: absolute;
+    top: 1.4rem;
+    right: 3rem;
+}
+
+.round-container{
+    right: 0;
+    border-radius: 1rem;
+}
+
+.switch{
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+
+    height: 1.65rem;
+    width: 2.8rem;
+    background-color:var(--main-bg-color-bis);
+}
+
+.switch input{
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    left: 0.1rem;
+    bottom: 0.1rem;
+    height: 1.45rem;
+    width: 1.45rem;
+    background-color: rgb(248, 232, 9);
+    transition: 0.5s;
+}
+
+.round:before, .round{
+    border-radius: 1.3rem;
+}
+
+
+input:checked + .slider{
+    background-color: var(--main-bg-color);
+}
+
+input:checked + .slider:before{
+    transform: translateX(1.1rem);
+}
+
 @media (max-width: 990px) {
 
     nav {
         background: linear-gradient(var(--secondary-bg-color-2), var(--secondary-bg-color-1));
+    }
+}
+
+@keyframes background-opacity {
+    0%{
+        opacity: 0;    
+    }
+    100%{
+        opacity: 1;
     }
 }

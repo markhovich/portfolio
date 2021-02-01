@@ -1,5 +1,6 @@
 
-<nav id="navbar" >
+<nav>
+  <div id="navbar-background"></div>
   <div class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#header">
       <img src="./assets/icons/logo.png" alt="JM">
@@ -24,6 +25,12 @@
         </li>
       </ul>
     </div>
+    
   </div>
-  
+  <div class="toggle-container">
+    <label class="round-container switch">
+        <input type="checkbox" (click)="toggleBackground()">
+        <span class="round slider"></span>
+    </label>
+</div>
 </nav>

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  //1 for day theme, 0 for night theme
+  theme: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -14,7 +17,7 @@ export class NavbarComponent implements OnInit {
   }
 
   addBackground(){
-    const navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar-background");
 
     function scrolled(){
       const currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -24,9 +27,23 @@ export class NavbarComponent implements OnInit {
       } else {
         navbar.classList.remove("scrolled");
       }
-
     }
     addEventListener("scroll", scrolled, false);
+  }
+
+  toggleBackground(){
+    document.getElementsByTagName('body')[0].classList.toggle('night-background');
+
+    const polygonList = document.getElementsByTagName('polygon');
+    console.log(polygonList);
+    for(let i=0; i<polygonList.length; i++){
+      if(this.theme){
+        polygonList[i].setAttribute('fill', 'black');
+      } else {
+        polygonList[i].setAttribute('fill', 'white');
+      }
+    }
+    this.theme = !this.theme;
   }
 
 }

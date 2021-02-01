@@ -6,9 +6,12 @@
 :root{
     --main-bg-color: rgb(255, 255, 255);
     --main-text-color: rgb(34, 33, 33);
-    --secondary-bg-color-1: #0d47a1;
-    --secondary-bg-color-2: #42a5f5;
+    --secondary-bg-color-1: rgb(13, 71, 161);
+    --secondary-bg-color-2: rgb(66, 165, 245);
     --third-color: rgb(226, 38, 38);
+
+    --main-bg-color-bis:  rgb(34, 33, 33);
+    --main-text-color-bis: rgb(255, 255, 255);
 }
 
 html{
@@ -20,6 +23,11 @@ body{
     background-color: var(--main-bg-color) ;
     color: var(--main-text-color);
     font-family: "Ubuntu", sans-serif;
+}
+
+body.night-background{
+    background-color: black;
+    color: var(--main-text-color-bis);
 }
 
 /******************************* GENERAL ***********************/
