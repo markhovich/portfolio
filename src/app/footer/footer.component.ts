@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const sharingFB: any;
 
 @Component({
   selector: 'app-footer',
@@ -10,6 +11,16 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  sharingFB(){
+    const description = document.querySelectorAll('[property="og:description"]')[0];
+    description.setAttribute('content', 'test');
+    console.log(description);
+
+    setTimeout(() => {
+      new sharingFB();
+    }, 1000);
   }
 
 }

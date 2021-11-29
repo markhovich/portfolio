@@ -1,0 +1,11 @@
+<h2>Compétences</h2>
+<div class="row">
+    <div *ngFor="let competence of competences" class="col-md-4">
+        <h3>{{competence.name}}</h3>
+        <ul class="list-group list-group-flush">
+            <li *ngFor="let item of competence.items" class="list-group-item">
+                <img src="{{item.icon}}" alt="">{{item.name}}
+            </li>
+        </ul>
+    </div>
+</div>

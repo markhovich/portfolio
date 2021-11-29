@@ -1,6 +1,21 @@
 <div class="timeline2">
     <ul>
-        <li>
+        <li *ngFor="let exp of experiences">
+            <div>
+                <div class="time-title">
+                    <h4>{{exp.date}} - {{exp.title}}</h4>
+                    <em>{{exp.subtitle}}</em>
+                </div>
+                <div class="time-description">
+                    <p>
+                        <span *ngFor="let descr of exp.description">
+                            - {{descr}}<br>
+                        </span>
+                    </p>
+                </div>    
+            </div>
+        </li>
+        <!-- <li>
             <div>
                 <div class="time-title">
                     <h4>2020 - Développeur Freelance</h4>
@@ -9,7 +24,7 @@
                 <div class="time-description">
                     <p>
                         Création de sites Internet<br>
-                        Développement front-end (Angular)
+                        Développement front-end (Angular)<br>
                         Développement back-end (Spring/Hibernate)
                     </p>
                 </div>
@@ -208,7 +223,7 @@
                 </div>
                 
             </div>
-        </li>
+        </li> -->
         
         
     </ul>

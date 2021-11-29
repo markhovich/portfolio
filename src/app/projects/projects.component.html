@@ -1,0 +1,70 @@
+<h2>Projets Réalisés</h2>
+<div class="row">
+    <div *ngFor="let project of projects" class="project-card col-lg-4">
+        <h3>{{project.name}}                       
+            <small class="badge badge-success">{{project.badge}}</small>
+        </h3>
+        
+        <a href="{{project.url}}">
+            <img class="mt-3" src="{{project.image}}" alt="Main Image">
+        </a>
+        <div class="project-body">
+            <hr>
+            <p class="project-comment">{{project.description}}
+            </p>
+        </div>
+        <a href="{{project.url}}" target="_blank" 
+            class="btn btn-warning btn-block" disabled="disabled">
+            L'application n'est pas en ligne actuellement
+        </a>
+        <!-- <a href="#header" class="btn btn-danger btn-block" (click)="onClickDisplay(0)">En savoir plus</a> -->
+        <!-- Bloc invisible se révélant au clique -->
+    <!-- <div class="project-details">
+        <a href="#projects" class="cross" (click)="removeCurtain()">X</a>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <app-technos [backUrl]="gitHubUrl[0].back"
+                [frontUrl]="gitHubUrl[0].front"></app-technos>
+            </div>
+            <div class="col-lg-8">
+                <h3>{{project.name}}</h3>
+
+                <form>
+                    <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+                    <input type="radio" name="fancy" value="hearts" id="hearts" />
+                    <input type="radio" name="fancy" value="spades" id="spades" />
+                    <input type="radio" name="fancy" value="diamonds" id="diamonds" />	
+
+                    <label for="clubs">
+                        <img src="./assets/projects/blog/crazytrip-2.jpg" alt="Image non chargée">
+                        <p>L'admnistrateur gère les articles et les 
+                            utilisateurs peuvent commenter les articles après authentification.
+                        </p>
+                    </label>
+                    <label for="hearts">
+                        <img src="./assets/projects/blog/crazytrip-3.jpg" alt="Image non chargée">
+                        <p>L'utilisateur peut consulter la liste des articles et effectuer une recherche 
+                            par mots clés.
+                        </p>
+                    </label>
+                    <label for="spades">
+                        <img src="./assets/projects/blog/crazytrip-4.jpg" alt="Image non chargée">
+                        <p>Il peut consulter le corps de l'article, voir les commentaires
+                            et lui-même commenter celui-ci en-dessous
+                        </p>
+                    </label>
+                    <label for="diamonds">                            
+                        <img src="./assets/projects/blog/crazytrip-5.jpg" alt="Image non chargée">
+                        <p>Il aura fallu au préalable créer un compte puis s'être authentifié pour avoir 
+                            accès à toutes ces fonctionnalités.
+                        </p>
+                    </label>
+        
+                </form>
+            </div>
+        </div>
+    
+    </div> -->
+    <!-- Fin bloc -->
+    </div>
+</div>
