@@ -15,7 +15,8 @@
         </div>
         <a href="{{project.url}}" target="_blank" 
             class="btn btn-warning btn-block" disabled="disabled">
-            L'application n'est pas en ligne actuellement
+            <span *ngIf="project.online">Voir l'application</span>
+            <span *ngIf="!project.online">L'application n'est pas en ligne</span>
         </a>
         <!-- <a href="#header" class="btn btn-danger btn-block" (click)="onClickDisplay(0)">En savoir plus</a> -->
         <!-- Bloc invisible se révélant au clique -->

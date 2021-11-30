@@ -11,11 +11,11 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'SeveUp App',
       badge: 'réalisé en équipe pro',
-      url: 'app.seve-up.com',
+      url: 'https://app.seve-up.com',
       gitHubUrl: 'Private',
-      description: 'seve up app is great',
+      description: 'Plateforme SAAS permettant d\'exploiter les données BIM par la data visualisation',
       online: true,
-      image: './assets/projects/contest/crazypic.jpg',
+      image: './assets/projects/seveup-screen.jpg',
       items: [
         {description: 'a', image: './assets/seve-up/1.png'},
         {description: 'b', image: './assets/seve-up/1.png'},
