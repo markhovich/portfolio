@@ -44,8 +44,8 @@ export class ProjectsComponent implements OnInit {
       badge: 'réalisé en équipe',
       url: 'app.seve-up.com',
       gitHubUrl: 'Private',
-      description: 'Lecteur de musique intégrant' +
-      'un gestionnaire de playlist' +
+      description: 'Lecteur de musique intégrant ' +
+      'un gestionnaire de playlist ' +
       'réalisé en collaboration avec Kevin MONAC',
       online: false,
       image: './assets/projects/spotify/spotify.jpg',
