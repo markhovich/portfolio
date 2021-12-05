@@ -12,25 +12,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#presentation">Présentation</a>
+          <a class="nav-link" href="#presentation">{{ 'header.navbar.presentation' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#competences">Compétences</a>
+          <a class="nav-link" href="#competences">{{ 'header.navbar.competences' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Réalisations</a>
+          <a class="nav-link" href="#projects">{{ 'header.navbar.realisations' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#timeline">Parcours</a>
+          <a class="nav-link" href="#timeline">{{ 'header.navbar.timeline' | translate}}</a>
         </li>
       </ul>
     </div>
-    
   </div>
-<div class="toggle-container">
-  <label class="press-container">
-      <input type="checkbox" (click)="toggleBackground()">
-      <span class="round press-slider"></span>
-  </label>
-</div>
+
+  <!-- toggle language -->
+  <div class="toggle-container toggle-lang">
+    <label class="press-container">
+        <input type="checkbox" (click)="useLanguage()">
+        <span class="press-slider press-slider-lang"></span>
+    </label>
+  </div>
+  <!-- toggle theme -->
+  <div class="toggle-container toggle-theme">
+    <label class="press-container">
+        <input type="checkbox" (click)="toggleBackground()">
+        <span class="press-slider press-slider-theme"></span>
+    </label>
+  </div>
 </nav>

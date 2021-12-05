@@ -1,38 +1,13 @@
-<div id="page" (click)=removeCurtain()></div>
-
 <div>  
     <section id="presentation">
         <div class="container mx-auto">
-            <h2>Présentation</h2>
+            <h2>{{ 'header.navbar.presentation' | translate}}</h2>
 
-            <p>
-                <strong>Passionné</strong> d'informatique depuis toujours, 
-                je suis un développeur fullstack ayant <strong>un an d’expérience réussie</strong> en entreprise (SeveUp), 
-               .<br>
-                Je développe aussi bien en front qu'en back avec une appétence pour le front avec <strong>Angular</strong> et les technologies basées sur JavaScript.
-            </p>
-            <p>    
-                SeveUp est une <strong>start-up</strong> éditrice de logiciel dans le domaine du <a href="https://fr.wikipedia.org/wiki/Building_information_modeling">BIM</a>
-                 et j’ai participé à la conception et au développement de leur application phare : 
-                 une <strong>plateforme SAAS</strong> permettant d’exploiter les données BIM par la data visualisation.<br>
-                 <a href="https://www.seve-up.com/">En savoir plus</a>
-            </p>
-            <p>
-                Cette expérience m’a permis de <strong>monter en compétences</strong> assez rapidement. <br>
-                En effet, la taille modeste de la structure a nécessité non seulement une <strong>automonie rapide</strong> 
-                mais également une <strong>transversalité</strong> sur toutes les aspects du développement logiciel.
-            </p>
-            <p> 
-                J’ai pris part à tous les niveaux de l’application : partant du travail en équipe avec <strong>GitLab</strong>, 
-                en passant par du développement pur avec <strong>Angular et Spring</strong>,
-                à la compréhension des <strong>attentes</strong> du commercial et du marketing, 
-                 jusqu’à un aperçu de <strong>l’architecture</strong> globale de l’applicatif.<br>
-                J’ai également été introduit à <strong>Power BI</strong> pour l'exploitation des données de plusieurs sources.
-            </p>
-            
-            <p>
-                Etant de plus auto-entrepreneur, j'ai aussi réalisé plusieurs petites missions sur Angular ainsi que des sites Wordpress.
-            </p>
+            <p [innerHtml]="'presentation.content-1' | translate "></p>
+            <p [innerHtml]="'presentation.content-2' | translate "></p>
+            <p [innerHtml]="'presentation.content-3' | translate "></p>
+            <p [innerHtml]="'presentation.content-4' | translate "></p>
+            <p [innerHtml]="'presentation.content-5' | translate "></p>
         </div>
     </section>
     
@@ -61,7 +36,7 @@
         </svg>
         <div class="container mx-auto pt-5">
             
-            <h2>Parcours</h2>
+            <h2>{{ 'header.navbar.timeline' | translate}}</h2>
             <app-timeline></app-timeline>
         </div>
         

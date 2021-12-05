@@ -14,64 +14,65 @@
                 <div class="col-sm-6">
                     <div class="mt-3">
                         <h5>Julien Marque</h5>
-                        Développeur FullStack (Spring, Angular)<br>
-                        30 ans
+                        {{ 'header.intro.job' | translate}}<br>
+                        {{ 'header.intro.spe' | translate}}<br>
+                        30 {{ 'header.intro.years' | translate}}
                     </div>
                     <div  class="mt-3">
-                        <h5>Réseaux sociaux</h5>
+                        <h5>{{ 'header.subtitle.social' | translate}}</h5>
                         <i class="fab fa-linkedin mr-1"></i><a href="https://www.linkedin.com/in/julien-marque/" target="_blank">LinkedIn</a> | 
                         <i class="fab fa-github mx-1"></i><a href="https://github.com/markhovich/" target="_blank">GitHub</a> |
                         <i class="fab fa-stack-overflow mx-1"></i><a href="https://stackoverflow.com/users/13628126/julien" target="_blank">StackOverflow</a>
                     </div>
                     <div class="mt-3">
                         <button class="btn btn-outline-warning">
-                            <a href="../assets/cv-julien-marque-developpeur.pdf" target="_blank">Télécharger mon CV en version PDF</a>
+                            <a href="../assets/cv-julien-marque-developpeur.pdf" target="_blank">{{ 'header.subtitle.download-cv' | translate}}</a>
                         </button>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="mt-3">
-                        <h5>Coordonnées</h5>
+                        <h5>{{ 'header.subtitle.contact' | translate}}</h5>
                         <div class="">
-                            <div class="row">
-                                <div class="col-xs-1 ml-2">
+                            <div class="row ">
+                                <div class="col-sm-1 ml-2">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <div class="col-xs-11 ml-2">
-                                    CLERMONT-FERRAND
+                                <div class="col-sm-11 ml-2">
+                                    CLERMONT-FERRAND - FRANCE
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1 ml-2">
+                                <div class="col-sm-1 ml-2">
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
-                                <div class="col-xs-11 ml-2">                         
+                                <div class="col-sm-11 ml-2">                         
                                     06 16 38 36 87
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-1 ml-2">
+                                <div class="col-sm-1 ml-2">
                                     <i class="fas fa-at"></i>
                                 </div>
-                                <div class="col-xs-11 ml-2">
+                                <div class="col-sm-11 ml-2">
                                     marque_julien@hotmail.fr
                                 </div>
                             </div>
                         </div> 
                         <div class="mt-3">
-                            <h5>Langues</h5>
+                            <h5>{{ 'header.subtitle.languages' | translate}}</h5>
                             <div class="row">
                                 <div class="col-md-4">
                                     <img class="flag mr-1" src="./assets/icons/france.png" alt="france-flag">
-                                    Français
+                                    {{ 'header.lang.fr' | translate}}
                                 </div>
                                 <div class="col-md-4">
                                     <img class="flag mr-1" src="./assets/icons/uk.png" alt="uk-flag">
-                                    Anglais
+                                    {{ 'header.lang.en' | translate}}
                                 </div>
                                 <div class="col-md-4">
                                     <img class="flag mr-1" src="./assets/icons/spain.png" alt="spain-flag">
-                                    Espagnol
+                                    {{ 'header.lang.es' | translate}}
                                 </div>
                             </div>
                         </div>

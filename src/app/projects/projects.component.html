@@ -1,4 +1,4 @@
-<h2>Projets Réalisés</h2>
+<h2>{{ 'header.navbar.realisations' | translate }}</h2>
 <div class="row">
     <div *ngFor="let project of projects" class="project-card col-lg-4">
         <h3>{{project.name}}                       
@@ -10,13 +10,13 @@
         </a>
         <div class="project-body">
             <hr>
-            <p class="project-comment">{{project.description}}
-            </p>
+            <p *ngIf="currentLang === 'fr'" class="project-comment">{{project.descriptionFr}}</p>
+            <p *ngIf="currentLang === 'en'" class="project-comment">{{project.descriptionEn}}</p>
         </div>
         <a href="{{project.url}}" target="_blank" 
             class="btn btn-warning btn-block" disabled="disabled">
-            <span *ngIf="project.online">Voir l'application</span>
-            <span *ngIf="!project.online">L'application n'est pas en ligne</span>
+            <span *ngIf="project.online">{{ 'projects.is-online' | translate}}</span>
+            <span *ngIf="!project.online">{{ 'projects.is-offline' | translate}}</span>
         </a>
         <!-- <a href="#header" class="btn btn-danger btn-block" (click)="onClickDisplay(0)">En savoir plus</a> -->
         <!-- Bloc invisible se révélant au clique -->

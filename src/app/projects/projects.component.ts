@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  currentLang: string;
   currentIndex: number;
+
   projects = [
     {
       name: 'SeveUp App',
       badge: 'réalisé en équipe pro',
       url: 'https://app.seve-up.com',
       gitHubUrl: 'Private',
-      description: 'Plateforme SAAS permettant d\'exploiter les données BIM par la data visualisation',
+      'descriptionFr': 'Plateforme SAAS permettant d\'exploiter les données BIM par la data visualisation',
+      'descriptionEn': 'SAAS plateform that makes it possible to use BIM data through data visualization',
       online: true,
       image: './assets/projects/seveup-screen.jpg',
       items: [
@@ -24,12 +28,13 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      name: 'Blog Voyage',
+      name: 'Crazy Trip',
       badge: 'réalisé en solo',
       url: 'crazy-trip.xyz',
       gitHubUrl: 'Private',
-      description: 'L\'admnistrateur gère les articles et les ' +
+      'descriptionFr': 'L\'admnistrateur gère les articles et les ' +
       'utilisateurs peuvent commenter les articles après authentification.',
+      'descriptionEn' : 'The admin manage the articles and users can comment them after authentication',
       online: false,
       image: './assets/projects/blog/crazytrip.jpg',
       items: [
@@ -44,9 +49,10 @@ export class ProjectsComponent implements OnInit {
       badge: 'réalisé en équipe',
       url: 'app.seve-up.com',
       gitHubUrl: 'Private',
-      description: 'Lecteur de musique intégrant ' +
+      'descriptionFr': 'Lecteur de musique intégrant ' +
       'un gestionnaire de playlist ' +
       'réalisé en collaboration avec Kevin MONAC',
+      'descriptionEn': 'Music player with playlist manager realised with Kevin MONAC',
       online: false,
       image: './assets/projects/spotify/spotify.jpg',
       items: [
@@ -57,12 +63,13 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      name: 'Concours Photo',
+      name: 'Picture contest',
       badge: 'réalisé en solo',
       url: 'app.seve-up.com',
       gitHubUrl: 'Private',
-      description: 'L\'utilisateur peut créer un concours, soumettre les photos' +
+      'descriptionFr': 'L\'utilisateur peut créer un concours, soumettre les photos' +
       ' et partager le lien pour que les personnes votent',
+      'descriptionEn': 'The user creates a contest, uploads the pictures and share the url to make people vote',
       online: false,
       image: './assets/projects/contest/crazypic.jpg',
       items: [
@@ -89,9 +96,11 @@ export class ProjectsComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
+    this.currentLang = this.translate.currentLang;
+    this.translate.onLangChange.subscribe(() => this.currentLang = this.translate.currentLang);
   }
 
   onClickDisplay(index: number): void {

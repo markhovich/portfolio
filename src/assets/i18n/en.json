@@ -1,0 +1,49 @@
+{
+    "header": {
+        "navbar": {
+            "presentation": "Presentation",
+            "competences": "Skills",
+            "realisations": "Developments",
+            "timeline": "Timeline"
+        },
+        "intro": {
+            "job": "FullStack Developer",
+            "spe": "Spring - Angular",
+            "years": "years old"
+        },
+        "subtitle": {
+            "contact": "Contact Details",
+            "social": "Social Networks",
+            "languages": "Languages",
+            "download-cv": "Download my CV in PDF"
+        },
+        "lang":{
+            "fr": "French",
+            "en": "English",
+            "es": "Spanish"
+        }
+    },
+    "presentation": {
+        "content-1": "I have always been <strong>passionate</strong> about IT and now I am a fullstack developer with one year of <strong>successful experience</strong> in a company (SeveUp).<br> I develop both front and back end with a preference for front end with <strong>Angular</strong> and JavaScript based technologies.",
+        "content-2": "SeveUp is a software publisher <strong>start-up</strong> in <a href=\"https://fr.wikipedia.org/wiki/Building_information_modeling\">BIM</a> and I have participated in designing and developing their application: a <strong>SAAS plateform</strong> allowing to exploit BIM data through data visualisation.<br><a href=\"https://www.seve-up.com/\">More about it</a>",
+        "content-3": "This experience allowed me to <strong>increase</strong> my skills quite quickly.<br> Indeed, the modest size of the structure required not only a <strong>quick self-motivation</strong> but also a <strong>transversality</strong> on all aspects of software development.",
+        "content-4": "I was involved in all levels of the application: from teamwork with <strong>GitLab</strong>, through pure development with <strong>Angular and Spring</strong>, to understanding the <strong>expectations</strong> of sales and marketing, to an overview of the overall <strong>architecture</strong> of the application.<br>I was also introduced to <strong>Power BI</strong> to exploit data from several sources.",
+        "content-5": "As a freelancer, I also did several small missions on Angular and Wordpress websites."
+    },
+    "skills": {
+        "back": "Backend",
+        "front": "Frontend",
+        "devops": "DevOps/Others"
+    },
+    "projects": {
+        "is-online": "Go to the app",
+        "is-offline": "The app is now offline",
+        "know-more": "More about it"
+    },
+    "timeline": {
+
+    }, 
+    "footer": {
+        "copyright": "Portfolio developed and designed by Julien Marque, 2020"
+    }
+}
